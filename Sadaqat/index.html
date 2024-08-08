@@ -1,0 +1,465 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+  <link rel="stylesheet" href="style.css">
+  <title>Sadaqat</title>
+  <style>
+    /* Container for section */
+    .section-background {
+      position: relative;
+      background: url('your-background-photo.jpg') no-repeat center center/cover;
+      padding: 50px 0;
+      color: #fff; /* Ensure text is visible on the background */
+    }
+  
+    .section-overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.5); /* Dark overlay for better text readability */
+      z-index: 1;
+    }
+  
+    .section-content {
+      position: relative;
+      z-index: 2;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px;
+      background: rgba(255, 255, 255, 0.8); /* Semi-transparent background for content */
+      border-radius: 10px;
+    }
+  
+    .section-title span {
+      color: crimson;
+    }
+  
+    .experience-item, .education-item {
+      margin-bottom: 30px;
+      border-left: 4px solid crimson;
+      padding-left: 20px;
+    }
+    /* WhatsApp Button Styles */
+.whatsapp-button {
+    position: fixed;
+    bottom: 20px; /* Adjust this value as needed */
+    right: 20px;  /* Adjust this value as needed */
+    background-color: #25D366; /* WhatsApp Green */
+    border-radius: 50%;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000; /* Ensure it appears above other elements */
+    transition: background-color 0.3s;
+}
+
+.whatsapp-button img {
+    width: 40px; /* Adjust size as needed */
+    height: 40px; /* Adjust size as needed */
+}
+
+.whatsapp-button:hover {
+    background-color: #128C7E; /* Darker green on hover */
+}
+.hero-image {
+    text-align: right;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50vw; /* Adjust height to be relative to viewport width */
+    width: 50vw;  /* Adjust width to be relative to viewport width */
+    max-height: 350px; /* Maximum height for larger screens */
+    max-width: 350px;  /* Maximum width for larger screens */
+    overflow: hidden;
+    border-radius: 50%;
+    margin-left: auto;
+    margin-right: 3%; /* Adjust as needed */
+    margin-top: 5%; /* Adjust as needed */
+  }
+
+  @media (max-width: 768px) {
+    .hero-image {
+      height: 40vw; /* Adjust height for smaller screens */
+      width: 40vw;  /* Adjust width for smaller screens */
+      max-height: 250px; /* Maximum height for smaller screens */
+      max-width: 250px;  /* Maximum width for smaller screens */
+      margin-left: auto;
+      margin-right: 5%;
+      margin-top: 3%;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .hero-image {
+      height: 30vw; /* Adjust height for very small screens */
+      width: 30vw;  /* Adjust width for very small screens */
+      max-height: 200px; /* Maximum height for very small screens */
+      max-width: 200px;  /* Maximum width for very small screens */
+      margin-left: auto;
+      margin-right: 7%;
+      margin-top: 2%;
+    }
+  }
+
+  </style>
+</head>
+
+<body>
+   <!-- Header -->
+   <section id="header">
+    <div class="header container">
+      <div class="nav-bar">
+        <div class="brand">
+          <a href="#hero">
+            <h1><span>S</span>adaqat <span>A</span>li</h1>
+          </a>
+        </div>
+        <div class="nav-list">
+          <div class="hamburger">
+            <div class="bar"></div>
+          </div>
+          <ul>
+            <li><a href="#hero" data-after="Home">Home</a></li>
+            <li><a href="#about" data-after="About">About</a></li>
+            <li><a href="#skills" data-after="Skills">Skills</a></li>
+            <li><a href="#experience" data-after="Experience">Experience</a></li>
+            <li><a href="#projects" data-after="Projects">Projects</a></li>
+            <li><a href="#contact" data-after="Contact">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End Header -->
+
+  <!-- Hero Section  -->
+  <section id="hero">
+    <div class="hero container">
+      <div class="hero-content">
+        <div class="hero-text">
+          <h1>Hello, <span></span></h1>
+          <h1>My Name is <span></span></h1>
+          <h1>Sadaqat Ali <span></span></h1>
+          <div class="contact-info" style="color: white;">
+            <p>
+              <i class="fas fa-phone-alt" style="color: white; margin-right: 8px;"></i>
+             <span style="color: white;">  Phone: 03704431217 </span>
+            </p>
+            <p>
+              <i class="fas fa-envelope" style="color: white; margin-right: 8px;"></i>
+              <a href="mailto:your-email@example.com" style="color: white; text-decoration: none;">Email: itsadaqat000@gmail.com</a>
+            </p>
+            <p>
+              <i class="fab fa-linkedin" style="color: white; margin-right: 8px;"></i>
+            <a href="https://www.linkedin.com/in/your-profile" style="color: white; text-decoration: none;">  LinkedIn: www.linkedin.com/in/sadaqat-ali-a8805027b</a>
+            </p>
+            <p>
+              <i class="fab fa-github" style="color: white; margin-right: 8px;"></i>
+              <a href="https://github.com/your-profile" style="color: white; text-decoration: none;"> GitHub:github.com/sadaqat935</a>
+            </p>
+            <a href="https://wa.me/923704431217?text=Hello%20Sadaqat%2C%20I%20would%20like%20to%20get%20in%20touch%20with%20you." class="whatsapp-button" target="_blank" rel="noopener noreferrer">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp Logo">
+            </a>
+          </div>
+          
+          
+        </div>
+     
+      </div>
+      <div class="hero-image">
+        <img src="./img/sada.jpeg" alt="Profile Image" style="width: 100%; height: 100%; object-fit: cover; object-position: top;">
+      </div>
+      
+      
+      
+    </div>
+  </section>
+  <!-- End Hero Section -->
+  <section id="about">
+    <div class="about container">
+      <div class="col-left">
+        <div class="about-img">
+          <img src="./img/sad.jpeg" alt="img">
+        </div>
+      </div>
+      <div class="col-right">
+        <h1 class="section-title">About <span>me</span></h1>
+        <h2>Back End Developer</h2>
+        <p>I'm a passionate and dedicated developer with a focus on creating efficient and user-friendly web applications. With a strong background in computer science and hands-on experience in Laravel and other web technologies, I strive to deliver high-quality solutions to complex problems. My skills include PHP, Laravel, MySQL, JavaScript, HTML/CSS, Git, Composer, and Bootstrap. I am also adept at problem-solving, communication, team collaboration, adaptability, and time management.</p>
+        <a href="resume/Sadaqat.pdf" class="cta" download="Sadaqat.pdf">Download Resume</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="Experience=" style="margin-top:-220px;">
+    <div class="services container sty">
+      <div class="service-top">
+        <h1 class="section-title">MY<span>SKILLS</span></h1>
+        <p>        
+          Here are some of the key skills I possess in both technical and interpersonal areas.
+        </p>
+ 
+    </div>
+  </section>
+  <!-- Skills Section -->
+  <section id="skills" style="padding: 50px 0; background-color: #f8f9fa; margin-top: -250px; padding-left:50px;">
+    <div class="container" style="max-width: 1200px; margin: 0 auto; text-align: center;">
+    
+  
+      <div class="skills-bottom" style="display: flex; justify-content: space-between; flex-wrap: wrap;">
+        <!-- Technical Skills Section -->
+        <div class="skills-left" style="flex: 1 1 45%; max-width: 45%; margin: 15px; padding: 20px; background: #ffffff; border-radius: 10px; box-shadow: 0px 0px 10px 0 rgba(0, 0, 0, 0.1); text-align: left; border: 2px solid crimson;">
+          <h2 style="font-size: 1.8rem; margin-bottom: 15px; color: #333;">Technical Skills</h2>
+          <div style="margin-bottom: 15px;">
+            <h3 style="font-size: 1.5rem; margin-bottom: 10px;">HTML & CSS</h3>
+            <ul style="list-style: none; padding: 0; margin: 0; font-size: 1rem; color: #6c757d;">
+              <li>Proficient in creating responsive layouts and designing attractive web pages using HTML5 and CSS3.</li>
+            </ul>
+          </div>
+          <div style="margin-bottom: 15px;">
+            <h3 style="font-size: 1.5rem; margin-bottom: 10px;">JavaScript</h3>
+            <ul style="list-style: none; padding: 0; margin: 0; font-size: 1rem; color: #6c757d;">
+              <li>Skilled in JavaScript for adding interactivity and dynamic features to websites.</li>
+            </ul>
+          </div>
+          <div style="margin-bottom: 15px;">
+            <h3 style="font-size: 1.5rem; margin-bottom: 10px;">PHP & Laravel</h3>
+            <ul style="list-style: none; padding: 0; margin: 0; font-size: 1rem; color: #6c757d;">
+              <li>Expertise in PHP programming and Laravel framework for building robust web applications.</li>
+            </ul>
+          </div>
+          <div style="margin-bottom: 15px;">
+            <h3 style="font-size: 1.5rem; margin-bottom: 10px;">Bootstrap</h3>
+            <ul style="list-style: none; padding: 0; margin: 0; font-size: 1rem; color: #6c757d;">
+              <li>Experienced with Bootstrap for designing responsive and modern user interfaces.</li>
+            </ul>
+          </div>
+          <div style="margin-bottom: 15px;">
+            <h3 style="font-size: 1.5rem; margin-bottom: 10px;">MySQL</h3>
+            <ul style="list-style: none; padding: 0; margin: 0; font-size: 1rem; color: #6c757d;">
+              <li>Experienced with MySQL for managing databases and writing complex queries.</li>
+            </ul>
+          </div>
+          <div style="margin-bottom: 15px;">
+            <h3 style="font-size: 1.5rem; margin-bottom: 10px;">Git</h3>
+            <ul style="list-style: none; padding: 0; margin: 0; font-size: 1rem; color: #6c757d;">
+              <li>Proficient in version control using Git for tracking changes and collaborating on code.</li>
+            </ul>
+          </div>
+        </div>
+  
+        <!-- Soft Skills Section -->
+        <div class="skills-right" style="flex: 1 1 45%; max-width: 45%; margin: 15px; padding: 20px; background: #ffffff; border-radius: 10px; box-shadow: 0px 0px 10px 0 rgba(0, 0, 0, 0.1); text-align: left; border: 2px solid crimson;">
+          <h2 style="font-size: 1.8rem; margin-bottom: 15px; color: #333;">Soft Skills</h2>
+          <div style="margin-bottom: 15px;">
+            <h3 style="font-size: 1.5rem; margin-bottom: 10px;">Communication</h3>
+            <ul style="list-style: none; padding: 0; margin: 0; font-size: 1rem; color: #6c757d;">
+              <li>Effective in conveying ideas and collaborating with team members.</li>
+            </ul>
+          </div>
+          <div style="margin-bottom: 15px;">
+            <h3 style="font-size: 1.5rem; margin-bottom: 10px;">Problem-Solving</h3>
+            <ul style="list-style: none; padding: 0; margin: 0; font-size: 1rem; color: #6c757d;">
+              <li>Strong ability to analyze problems and develop solutions.</li>
+            </ul>
+          </div>
+          <div style="margin-bottom: 15px;">
+            <h3 style="font-size: 1.5rem; margin-bottom: 10px;">Teamwork</h3>
+            <ul style="list-style: none; padding: 0; margin: 0; font-size: 1rem; color: #6c757d;">
+              <li>Collaborative in team settings to achieve common goals.</li>
+            </ul>
+          </div>
+          <div style="margin-bottom: 15px;">
+            <h3 style="font-size: 1.5rem; margin-bottom: 10px;">Time Management</h3>
+            <ul style="list-style: none; padding: 0; margin: 0; font-size: 1rem; color: #6c757d;">
+              <li>Efficient in managing time and prioritizing tasks.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+
+
+  <!--  Section -->
+
+  <!-- End Service Section -->
+  <section id="experience" class="section-background">
+    <div class="section-overlay"></div>
+    <div class="section-content">
+      <div class="service-top" style="text-align: center;">
+        <h1 class="section-title" style="font-size: 4rem; margin-bottom: 20px;">Experience & <span>Education</span></h1>
+        <p style="font-size: 1.1rem; color: #333; margin-bottom: 40px;">
+          Here is an overview of my professional experience and educational background.
+        </p>
+      </div>
+      <div class="education">
+        <h2 style="font-size: 2rem; color: #333; margin-bottom: 15px;">Education</h2>
+        <div class="education-item">
+          <h3 style="font-size: 1.8rem; color: #333;">Bachelor of Science in Computer Science
+          </h3>
+          <p style="font-size: 1.1rem; color: #333;">National College of Business Administration & Economics
+            | Lahore | 2023-2025</p>
+          <p style="font-size: 1rem; color: #333;">
+
+            Bachelor of Science in Computer Science (BSCS) with notable achievements in software development, recognized for academic excellence and innovative project work.          </p>
+        </div>
+        <div class="education-item">
+          <h3 style="font-size: 1.8rem; color: #333;">Associate Degree Program in Computer Science
+          </h3>
+          <p style="font-size: 1.1rem; color: #333;">Superior College | Lahore | 2021-2022</p>
+          <p style="font-size: 1rem; color: #333;">
+            Associate Degree Program in Computer Science (ADP/CS) with notable achievements in software development, recognized for academic excellence and innovative project work.          </p>
+          </p>
+        </div>
+      <!-- Experience Section -->
+      <div class="experience" style="margin-bottom: 40px;">
+        <h2 style="font-size: 2rem; color: #333; margin-bottom: 15px;">Professional Experience</h2>
+      
+        <div class="experience-item">
+          <h3 style="font-size: 1.8rem; color: #333; ">Internship In PHP</h3>
+          <p style="font-size: 1.1rem; color: #333;">Asquare Tech | Lahore | May - July </p>
+          <p style="font-size: 1rem; color: #333;">
+            Completed a 3-month PHP internship, gaining hands-on experience in web development, database management, and integrating server-side functionalities.          </p>
+        </div>
+        <!-- Add more experience items as needed -->
+      </div>
+  
+      <!-- Education Section -->
+     
+        <!-- Add more education items as needed -->
+      </div>
+    </div>
+  </section>
+  <!-- Projects Section -->
+  <section id="projects">
+    <div class="projects container">
+      <div class="projects-header">
+        <h1 class="section-title">Recent <span>Projects</span></h1>
+      </div>
+      <div class="all-projects">
+        <div class="project-item">
+          <div class="project-info">
+            <h1 style="margin-top: 0px;">Multivendor E-commerce Website</h1>
+            <p>
+              Developed a robust multivendor e-commerce website with Laravel, featuring comprehensive CRUD operations and user authentication. Implemented a user-friendly shopping cart and wishlist system, along with an advanced admin panel for managing orders and products. The platform’s responsive design ensures a seamless experience across devices, showcasing expertise in Laravel, MVC architecture, and front-end development.            </p>
+          </div>
+          <div class="project-img">
+            <img src="./img/e.png" alt="img">
+          </div>
+        </div>
+        <div class="project-item">
+          <div class="project-info">
+            <h1 >CRUD Operation</h1>
+            <p>
+              Integrated CRUD functionality in Laravel with user-friendly interfaces and SweetAlert for smooth, interactive notifications. This approach enhanced data management and user experience  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad, iusto cupiditate voluptatum impedit unde
+              rem ipsa distinctio illum quae mollitia ut, accusantium eius odio ducimus illo neque atque libero non sunt
+              harum? Ipsum repellat animi, fugit architecto voluptatum odit et!by providing clear, real-time feedback for create, read, update, and delete actions.
+            </p>
+          </div>
+          <div class="project-img">
+            <img src="./img/crud.png" alt="img">
+          </div>
+        </div>
+
+   
+   
+      </div>
+    </div>
+  </section>
+  <!-- End Projects Section -->
+
+  <!-- About Section -->
+
+  <!-- End About Section -->
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <div class="contact container">
+      <div>
+        <h1 class="section-title" style="margin-top: -100px; margin-bottom: 50px;">Contact <span>info</span></h1>
+      </div>
+      <div class="contact-items" >
+        <div class="contact-item" >
+          <div class="icon"><img src="https://img.icons8.com/bubbles/100/000000/phone.png" /></div>
+          <div class="contact-info">
+            <h1>Phone</h1>
+            <h2>03704431217</h2>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="icon"><img src="https://img.icons8.com/bubbles/100/000000/new-post.png" /></div>
+          <div class="contact-info">
+            <h1>Email</h1>
+            <h2>itsadaqat000@gmail.com</h2>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="icon"><img src="https://img.icons8.com/bubbles/100/000000/map-marker.png" /></div>
+          <div class="contact-info">
+            <h1>Address</h1>
+            <h2>Lahore, Punjab, Pakistan</h2>
+          </div>
+        </div>
+      </div>
+      <!-- Contact Form -->
+     <div class="contact-item" style="width: 100%; max-width: 600px; padding: 30px; text-align: center; border-radius: 10px; margin: 30px auto; box-shadow: 0px 0px 18px 0 #0000002c; transition: 0.3s ease box-shadow; display: flex; justify-content: center; align-items: center; flex-direction: column;">
+    <div class="contact-info">
+        <h1 style="font-size: 2.5rem; font-weight: 500; margin-bottom: 5px; color: black;">Contact Us</h1>
+           <form action="send.php" method="post"
+          style="width: 100%;">
+            <div class="form-group" style="margin-bottom: 15px;">
+                <label for="name" style="display: block; margin-bottom: 5px; color: black;">Name</label>
+                <input type="text" id="name" name="name" required style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 4px;">
+            </div>
+            <div class="form-group" style="margin-bottom: 15px;">
+                <label for="email" style="display: block; margin-bottom: 5px; color: black;">Email</label>
+                <input type="email" id="email" name="email" required style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 4px;">
+            </div>
+            <div class="form-group" style="margin-bottom: 15px;">
+                <label for="subject" style="display: block; margin-bottom: 5px; color: black;">Subject</label>
+                <input type="text" id="subject" name="subject" required style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 4px;">
+            </div>
+            <div class="form-group" style="margin-bottom: 15px;">
+                <label for="message" style="display: block; margin-bottom: 5px; color: black;">Message</label>
+                <textarea id="message" name="message" rows="5" required style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 4px;"></textarea>
+            </div>
+            <button type="submit" name="submit" class="cta" style="background-color: crimson; color: white; padding: 10px 20px; border: none; border-radius: 4px; cursor: pointer;">Send Message</button>
+        </form>
+    </div>
+</div>
+
+      <!-- End form Section -->
+
+    </div>
+  </section>
+  <!-- End Contact Section -->
+  
+  <!-- Footer -->
+  <section id="footer">
+    <div class="footer container">
+      <div class="brand">
+        <h1><span>S</span>adaqat <span>A</span>li</h1>
+      </div>
+      <h2>Your Complete Web Solution</h2>
+   
+      <p>Copyright © 2024 Sadaqat. All rights reserved</p>
+    </div>
+  </section>
+  <!-- End Footer -->
+  <script src="./app.js"></script>
+</body>
+
+</html>
